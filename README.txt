@@ -2,6 +2,9 @@ saveToPDF.bat saves various URLs to PDFs on a daily schedule using the Chrome he
 
 Google Chrome must be installed on the computer, but it cannot be running when the script is launched.
 
+
+To config:
+
 For each day of the month, create a .txt file with the digit of the day; for example, 13.txt
 
 Inside 13.txt, type the name you would like the PDF file to have, and the URL. The URL must be escaped, with no spaces: spaces must be replaced with %20
@@ -10,6 +13,8 @@ For example:
 
 wikipedia https://en.wikipedia.org/wiki/Main%20Page
 mpr mprnews.org
+
+On running the script, it will ask you for a day of the month. Leave blank for the current date.
 
 Running the script on the 13th of the month will save wikipedia.pdf and mpr.pdf to the folder PDFs/YYYY/MM/ from where the script is run.
 
